@@ -1,0 +1,115 @@
+.header{
+	 
+	 background-color: orange;
+	 width: 100%;
+	    .fa {
+	    	color: white;
+	    }
+		.header-contact{
+		  ul{
+			li{
+				
+				list-style: none;
+				display: inline-block;
+				text-align: center;
+				padding-top: 14px;
+				padding-left: .5rem!important;
+				padding-right: .5rem!important;
+				color: white
+			}
+    	  }
+		}
+		.header-social-icons{
+		   @media (min-width: 575px){
+		   	  display: flex;
+		   	  justify-content:center;
+		   }	
+		  ul{
+		  	  margin-right: 10px;
+			li{
+
+				list-style: none;
+				display: inline-block;
+				font-size: 22px;
+				text-align: center;
+				padding-top: 8px;
+				padding-left: .5rem!important;
+				padding-right: .5rem!important;
+				color: white;
+			}
+    	  }
+		}
+	}
+.main-header{
+
+	width: 100%;
+	background-color: transparent;
+
+	.logo{
+		float: left;
+	}
+	
+}
+.banner-img{
+	background-image: cover;
+	 margin-top: -77px;
+}
+.car-section{
+	 background-image: url('/images/Home Page/background.png');
+	 // background-image: cover;
+	 
+	.heading{
+		font-size: 28px;
+		color:orange;
+	}
+	.description{
+		font-size: 18px;
+		color:orange;	
+	}
+	.card{
+		box-shadow: 0 10px 25px 0 rgba(128, 128, 128, 0.2);
+		border-color: none;
+		border: 2px solid orange;
+		.card-footer{
+			border-top: none;
+		}
+	}
+	.bottom{
+        margin-bottom:30px; 
+	}
+}
+.rental-car{
+	
+	width: 100%;
+	background-image: url('/images/Home Page/cta-banner.jpg');
+	padding: 7rem 0 7rem 0;
+	background-image: cover;
+	background-repeat: no-repeat;
+}
+.about-us{
+	max-width: 100%;
+	width: 100%;
+	background-image: url('/images/Home Page/about-banner.jpg');
+	// padding: 20rem 0 20rem 0;
+	height: 800px;
+	@media (min-width: 575px){
+		height: 900px;
+	}
+	background-image: cover;
+	background-repeat: no-repeat;
+	.access{
+		background-color: rgba(30,43,55, 0.8);
+	}
+	.about-service{
+		background-color: white;
+		height: 300px;
+	}
+	.about-online{
+		background-color: orange;
+		height: 300px;
+	}
+	.about-procedure{
+		background-color: white;
+		height: 300px;
+	}
+}
