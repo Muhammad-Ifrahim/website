@@ -7,7 +7,7 @@
 					<ul>
 						<li>
 							<i class="fa fa-phone">
-							<span class="pl-2"> CALL +923334911452 </span>
+							<span class="pl-2"> CALL +923217592332 </span>
 							</i>
 						</li>
 						<li>

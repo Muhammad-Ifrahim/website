@@ -9,7 +9,7 @@
 				<ul class="mt-3 pl-0">
 					<li class="">
 						<i class="fa fa-phone text-white">
-						<span class="pl-2 text-white">+923334911452 </span>
+						<span class="pl-2 text-white">+923217592332</span>
 						</i>
 					</li>
 					<li class="mt-">
@@ -19,7 +19,7 @@
 					</li>
 					<li class="mt-2">
 						<i class="fa fa-map-marker text-white">
-						<span class="pl-2 text-white">Allama Iqbal Town Lahore</span>
+						<span class="pl-2 text-white">Street # 7 Raza Block, Iqbal Town Lahore</span>
 						</i>
 					</li>
 				</ul>
