@@ -1,0 +1,99 @@
+Font Font Family.
+Font : montserrat
+
+   header top : 
+       {
+          background-color:ff690f 
+          Font-Size :12px;
+       }
+   main-header{
+         Font-Size :16px;
+   }     
+
+   CAR SECTION 
+   {
+       semi-bold
+       Font-size:48px;
+
+       Supporting-text{
+       	   17232c
+           medium;
+           20px;
+       }
+       PRICE {
+           	FONT:FAMILY=MEDIUM
+           	UPPERCAPE
+           	17PX
+       }
+       Read-more{
+          regular
+          font-size 14p
+       }
+   }
+
+   FIND-CAR {
+      MEDIUM
+      22PX;
+         SUpporting {
+         			18px;
+         			Extra light
+          }
+   }
+
+
+   RENT A CAR {
+       28PX;
+       MEDIUM
+
+       right-text{
+          18px;
+          Extra Light
+
+          ONLINE ACCESS {
+               MEDIUM
+               24
+          }
+       }
+   }
+
+   BOXES {
+      MEDIUM  HEADING
+      24
+      		Text{
+      		  extra-light 18;
+      		}
+   }
+
+   footer{
+   	 color-code : 0a22f6
+     main-heading{
+      MEDIUM 
+      24PX;
+         text{
+            extra-light
+            18
+         }
+     }
+
+   }
+
+
+////////////////////////////////////////////////////////////////
+
+ 
+ mainheading{
+    medium
+    48
+      sub-heading{
+         36
+         medium
+
+          box-internal{
+             heading: medium 24
+             text: 18 Extra Light;
+          }
+      }
+
+ }
+
+ <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">

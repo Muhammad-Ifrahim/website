@@ -7,7 +7,7 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
+// window.Vue = require('vue');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -15,8 +15,27 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+// Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
-const app = new Vue({
-    el: '#app'
+// const app = new Vue({
+//     el: '#app'
+// });
+$(document).ready(function(){
+	
+	if (window.location.href.indexOf("tab=cars") > -1) {
+       	   
+       $("body ,html").animate({
+          scrollTop :$('#car-section').offset().top 
+       },1000);   
+    }
+    else if(window.location.href.indexOf("tab=about") > -1) {
+       $("body ,html").animate({
+          scrollTop :$('#about-us').offset().top 
+       },1000);   
+    }
+    else if(window.location.href.indexOf("tab=contact") > -1) {
+       $("body ,html").animate({
+          scrollTop :$('#footer-section').offset().top 
+       },1000);   
+    }
 });

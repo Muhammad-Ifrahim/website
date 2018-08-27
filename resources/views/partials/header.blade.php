@@ -12,7 +12,7 @@
 						</li>
 						<li>
 							<i class="fa fa-envelope">
-							<span class="pl-2">rent@gmail.com</span>
+							<span class="pl-2">aspirethrottle147@gmail.com</span>
 							</i>
 						</li>
 					</ul>
@@ -38,7 +38,7 @@
 			<div class="row justify-content-center align-items-center">
 				<div class="col-12">
 					<nav class="navbar navbar-expand-lg ">
-						<a class="navbar-brand" href="#">
+						<a class="navbar-brand" href="{!! url('/') !!}">
 							<img src="{!! asset('/images/Home Page/Logo.png') !!}">
 						</a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,16 +47,16 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav ml-auto">
 								<li class="nav-item active">
-									<a class="nav-link text-white" href="#">Home</a>
+									<a class="nav-link " href="{!! url('/') !!}">Home</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link text-white" href="#">Cars</a>
+									<a class="nav-link " href="{!! url('/') !!}?tab=cars">Cars</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link text-white" href="#">About</a>
+									<a class="nav-link " href="{!! url('/') !!}?tab=about">About</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link text-white" href="#">Contact</a>
+									<a class="nav-link " href="{!! url('/') !!}?tab=contact">Contact</a>
 								</li>
 							</ul>
 						</div>

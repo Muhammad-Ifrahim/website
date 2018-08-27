@@ -1,5 +1,5 @@
 .header {
-  background-color: orange;
+  background-color: #ff690f;
   width: 100%;
 }
 
@@ -15,6 +15,10 @@
   padding-left: 0.5rem !important;
   padding-right: 0.5rem !important;
   color: white;
+}
+
+.header .header-contact ul li span {
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (min-width: 575px) {
@@ -43,6 +47,10 @@
   color: white;
 }
 
+.header .header-social-icons ul li span {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .main-header {
   width: 100%;
   background-color: transparent;
@@ -52,34 +60,58 @@
   float: left;
 }
 
+.main-header ul li a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #ff690f;
+}
+
 .banner-img {
   background-image: cover;
   margin-top: -77px;
 }
 
 .car-section {
-  background-image: url("/images/Home Page/background.png");
+  background-image: url("/images/Home Page/background.jpg");
+  background-image: cover;
+  background-position: center;
 }
 
 .car-section .heading {
   font-size: 28px;
-  color: orange;
+  color: #ff690f;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 .car-section .description {
   font-size: 18px;
-  color: orange;
+  color: #ff690f;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
 }
 
 .car-section .card {
   -webkit-box-shadow: 0 10px 25px 0 rgba(128, 128, 128, 0.2);
           box-shadow: 0 10px 25px 0 rgba(128, 128, 128, 0.2);
   border-color: none;
-  border: 2px solid orange;
+  border: 2px solid #ff690f;
+}
+
+.car-section .card p {
+  color: #ff690f;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .car-section .card .card-footer {
   border-top: none;
+}
+
+.car-section .card .card-footer a {
+  background-color: #ff690f;
+  color: #17232c;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 .car-section .bottom {
@@ -89,42 +121,181 @@
 .rental-car {
   width: 100%;
   background-image: url("/images/Home Page/cta-banner.jpg");
+  background-position: center;
   padding: 7rem 0 7rem 0;
-  background-image: cover;
   background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 575px) {
+  .rental-car {
+    padding: 3rem 0 7rem 0;
+  }
+}
+
+.rental-car .heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.rental-car .description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.rental-car a {
+  background-color: #ff690f;
+  color: #17232c;
+  border-color: #ff690f;
 }
 
 .about-us {
   max-width: 100%;
   width: 100%;
   background-image: url("/images/Home Page/about-banner.jpg");
+  background-position: center;
   height: 800px;
   background-image: cover;
   background-repeat: no-repeat;
 }
 
-@media (min-width: 575px) {
-  .about-us {
-    height: 900px;
-  }
+.about-us h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.about-us .rental-cars {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .about-us .access {
   background-color: rgba(30, 43, 55, 0.8);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
 }
 
 .about-us .about-service {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   background-color: white;
   height: 300px;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.about-us .about-service .heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
 }
 
 .about-us .about-online {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   background-color: orange;
   height: 300px;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.about-us .about-online .heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
 }
 
 .about-us .about-procedure {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   background-color: white;
   height: 300px;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.about-us .about-procedure .heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+@media (max-width: 575px) {
+  .about-us .main-heading {
+    margin-top: 40px;
+  }
+}
+
+.footer-section {
+  background-color: #1e2b37;
+  padding: 7rem 0 7rem 0;
+}
+
+.footer-section ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+@media (max-width: 575px) {
+  .footer-section {
+    margin-top: 875px;
+  }
+
+  .contact-us {
+    text-align: center !important;
+  }
+}
+
+.car-detail .car-heading {
+  font-size: 28px;
+  color: #ff690f;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.car-detail .car-image {
+  border: 2px solid #ff690f;
+}
+
+.car-detail .vehicle-price {
+  border: 2px solid #ff690f;
+}
+
+.car-detail .vehicle-price table thead {
+  border-top: none;
+}
+
+.car-detail .vehicle-price table tr th {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  color: #ff690f;
+}
+
+.car-detail .vehicle-price table tr td {
+  border-top: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #ff690f;
+}
+
+.car-detail .vehicle-detail {
+  border: 2px solid #ff690f;
+}
+
+.car-detail .vehicle-detail table tr th {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  color: #ff690f;
+}
+
+.car-detail .vehicle-detail table tr td {
+  border-top: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #ff690f;
 }
 
