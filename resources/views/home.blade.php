@@ -1,163 +1,299 @@
 @extends('master')
-<link rel="stylesheet" type="text/css" href="{!! mix('/home/css/home.css') !!}">
 @section('content')
-<div class="banner-img">
-	<img class="w-100" src="{!! asset('/images/Home Page/banner.jpg') !!}">
-</div>
-<section id="car-section" class="car-section">
-	<div class="container ">
-		<div class="row d-flex justify-content-center align-items-center">
-			<div class="col-12 my-5">
-				<h1 class="mb-0 heading text-center">CARS</h1>
-				<p class="description text-center pt-3">We facilitate you by bringing the best cars</p>
-				<div class="row">
-					<div class="col-lg-4 bottom">
-						<div class="card">
-							<img class="card-img-top" src="{!! asset('images/Home Page/WagonR.jpeg') !!}">
-							<div class="card-body">
-								<h5 class="card-title"></h5>
-								<p class="card-text text-center">
-									Suzuki WagonR
-								</p>
-							</div>
-							<div class="card-footer bg-transparent text-center">
-								<a href="{!! url('/car-wagonR') !!}" class="btn btn-warning ">
-									Read More
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 bottom">
-						<div class="card">
-							<img class="card-img-top" src="{!! asset('images/Home Page/wagonr-white.jpg') !!}">
-							<div class="card-body">
-								<h5 class="card-title"></h5>
-								<p class="card-text text-center">
-									Suzuki WagonR
-								</p>
-							</div>
-							<div class="card-footer bg-transparent text-center">
-								<a href="{!! url('/car-wagonR') !!}" class="btn btn-warning ">
-									Read More
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 bottom">
-						<div class="card">
-							<img class="card-img-top" src="{!! asset('images/Home Page/cultus.jpg') !!}">
-							<div class="card-body">
-								<h5 class="card-title"></h5>
-								<p class="card-text text-center">
-									Cultus (New Model)
-								</p>
-							</div>
-							<div class="card-footer bg-transparent text-center">
-								<a href="{!! url('/car-cultus') !!}" class="btn btn-warning ">
-									Read More
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 bottom">
-						<div class="card">
-							<img class="card-img-top" src="{!! asset('images/Home Page/honda-city.jpg') !!}">
-							<div class="card-body">
-								<h5 class="card-title"></h5>
-								<p class="card-text text-center">
-									Honda City
-								</p>
-							</div>
-							<div class="card-footer bg-transparent text-center">
-								<a href="{!! url('/car-city') !!}" class="btn btn-warning ">
-									Read More
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 bottom">
-						<div class="card">
-							<img class="card-img-top" src="{!! asset('images/Home Page/corolla-white.jpg') !!}">
-							<div class="card-body">
-								<h5 class="card-title"></h5>
-								<p class="card-text text-center">
-									Toyota Corolla
-								</p>
-							</div>
-							<div class="card-footer bg-transparent text-center">
-								<a href="{!! url('/car-toyota') !!}" class="btn btn-warning ">
-									Read More
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section id="car-rental" class="rental-car">
+<!-- start banner Area -->
+<section class="banner-area relative" id="home">
+	<div class="overlay overlay-bg"></div>
 	<div class="container">
-		<div class="row  d-flex justify-content-left align-items-center">
-			<div class="col-6 col-12">
-				<p class="text-white heading">FIND THE RENTAL CAR</p>
-				<p class="text-white description">- Search  hundered of other  travel sites at once</p>
-				<p class="text-white description">- Find the best price for the Rental car you want</p>
-				<a href="" class="btn btn-warning">Read More</a>
+		<div class="row fullscreen d-flex align-items-center justify-content-center">
+			<div class="banner-content col-lg-7 col-md-6 ">
+				<h6 class="text-white ">the Royal Essence of Journey</h6>
+				<h1 class="text-white text-uppercase">
+				Relaxed Journey Ever
+				</h1>
+				<p class="pt-20 pb-20 text-white">
+					Rent a car at low prices.
+				</p>
+				<a href="#" class="primary-btn text-uppercase">Rent Car Now</a>
+			</div>
+			<div class="col-lg-5  col-md-6 header-right">
+				<h4 class="text-white pb-30">Online Service will be available Soon! </h4>
+				<form class="form" role="form" autocomplete="off">
+					<div class="form-group">
+						<div class="default-select" id="default-select"">
+							<select>
+								<option value="" disabled selected hidden>Select Your Car</option>
+								<option value="1">Toyota</option>
+								<option value="1">Honda</option>
+								<option value="1">Suzuki</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-md-6 wrap-left">
+							<div class="default-select" id="default-select"">
+								<select>
+									<option value="" disabled selected hidden>Pickup</option>
+									<option value="1">Pickup One</option>
+									<option value="1">Pickup Two</option>
+									<option value="1">Pickup Three</option>
+									<option value="1">Pickup Four</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6 wrap-right">
+							<div class="input-group dates-wrap">
+								<input id="datepicker" class="dates form-control" id="exampleAmount" placeholder="Date & time" type="text">
+								<div class="input-group-prepend">
+									<span  class="input-group-text"><span class="lnr lnr-calendar-full"></span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-md-6 wrap-left">
+							<div class="default-select" id="default-select"">
+								<select>
+									<option value="" disabled selected hidden>Drop off</option>
+									<option value="1">Drop off One</option>
+									<option value="1">Drop off Two</option>
+									<option value="1">Drop off Three</option>
+									<option value="1">Drop off Four</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6 wrap-right">
+							<div class="input-group dates-wrap">
+								<input id="datepicker2" class="dates form-control" id="exampleAmount" placeholder="Date & time" type="text">
+								<div class="input-group-prepend">
+									<span  class="input-group-text"><span class="lnr lnr-calendar-full"></span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="from-group">
+						<input class="form-control txt-field" type="text" name="name" placeholder="Your name">
+						<input class="form-control txt-field" type="email" name="email" placeholder="Email address">
+						<input class="form-control txt-field" type="tel" name="phone" placeholder="Phone number">
+					</div>
+					<div class="form-group row">
+						<div class="col-md-12">
+							<button type="reset" class="btn btn-default btn-lg btn-block text-center text-uppercase">Confirm Car Booking</button>
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
 </section>
-<section id="about-us" class="about-us">
+<!-- End banner Area -->
+<!-- Start feature Area -->
+<section class="feature-area section-gap" id="about-us">
 	<div class="container">
-		<div class="row justify-content-center align-items-center mb-5">
-			<div class="col-12 mb-5">
-				<div class="row mb-4">
-					<div class="col-12">
-						<h1 class="text-white text-center main-heading mt-lg-5"> ABOUT US</h1>
-					</div>
-				</div>
-				<div class="row rent-a-car access p-5">
-					<div class="col-lg-2">
-						<p class="text-white rental-cars">Rent A Car  Lahore</p>
-					</div>
-					<div class="col-lg-10">
-						<p class="text-white">
-							No matter to which city you plan to travel from lahore or for what purpose does your trip serve Our car rental service in Lahore can assist you in the most reliable way out round the clock
-						</p>
-						<p class="text-white">
-							Online Access to Our Rental Car in Lahore
-						</p>
-						<p class="text-white">
-							One can easily reach for our Car hire Company.
-							Although with the increasing volume of Demand there have been several car rentals operators emerging in the market
-							We offer brand new Toyota Gli, Honda City,Cultus ,Wagon R 
-						</p>
-					</div>
+		<div class="row d-flex justify-content-center">
+			<div class="col-md-8 pb-40 header-text">
+				<h1>What Services we offer to our clients</h1>
+				<p>
+					We offer the best rent a car service in Lahore.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-6">
+				<div class="single-feature">
+					<h4><span class="lnr lnr-user"></span>Expert Technicians</h4>
+					<p>
+						Periodic maintenance of vehicles, use of genuine spare parts and replacement of cars every third year enables us to keep our fleet up-to-date and tension-free.
+					</p>
 				</div>
 			</div>
-			<div class="col-lg-4 col-12 px-0 mb-4">
-				<div class="about-service p-4">
-					<p class="heading">Highly Professional Rent a Car</p>
-					<br>
-					<p>it has been the combined efforts of a highly professional yet one of the finest working authority of experts who have been contributing to the run of our tremendous car rental 	service in Lahore</p>
+			<div class="col-lg-4 col-md-6">
+				<div class="single-feature">
+					<h4><span class="lnr lnr-license"></span>Professional Service</h4>
+					<p>
+						Usage of the Internet is becoming more common due to rapid advancement of technology and power.
+					</p>
 				</div>
 			</div>
-			<div class="col-lg-4 col-12 px-0 mb-4">
-				<div class="about-online p-4">
-					<p class="heading"">Secure Online Contact Services</p>
-					<br>
-					<p>You can reach for rent a car Lahore through our website,where you can glance through service description a fleet of cars and choose the most suitable one according to your requirement</p>
+			<div class="col-lg-4 col-md-6">
+				<div class="single-feature">
+					<h4><span class="lnr lnr-phone"></span>Great Support</h4>
+					<p>
+						Our team is available 24/7 to make your travel more exciting.
+					</p>
 				</div>
 			</div>
-			<div class="col-lg-4 col-12 px-0 mb-4">
-				<div class="about-procedure p-4">
-					<p class="heading">Customize Car Hire Procedure</p>
-					<br>
-					<p>We have been maintaining the customized flow of processes across the working steam that has been helping our Rent a Car Lahore experts in rendering prompt and efficient customer handling facilities.</p>
+			<div class="col-lg-4 col-md-6">
+				<div class="single-feature">
+					<h4><span class="lnr lnr-rocket"></span>Technical Skills</h4>
+					<p>
+						Usage of the Internet is becoming more common due to rapid advancement of technology and power.
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="single-feature">
+					<h4><span class="lnr lnr-diamond"></span>Highly Recomended</h4>
+					<p>
+						Renowned for our outstanding service levels both for chauffeur driven and self-driven rentals. Providing reasonable rates with the best cars to facilitate our customers.
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="single-feature">
+					<h4><span class="lnr lnr-bubble"></span>Positive Reviews</h4>
+					<p>
+						Excellent service. Very professional people. Cars are in very good condition.
+					</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+<!-- End feature Area -->
+<!-- Start home-about Area -->
+<section class="home-about-area" id="about-us">
+	<div class="container-fluid">
+		<div class="row justify-content-center align-items-center">
+			<div class="col-lg-6 no-padding home-about-left">
+				<img class="img-fluid" src="{!! asset('/images/Home Page/about-img.jpg') !!}" alt="">
+			</div>
+			<div class="col-lg-6 no-padding home-about-right">
+				<h1>Rent A Car  Lahore</h1>
+				<p>
+					<span>Online Access to Our Rental Car in Lahore</span>
+				</p>
+				<p>
+					No matter to which city you plan to travel from lahore or for what purpose does your trip serve Our car rental service in Lahore can assist you in the most reliable way out round the clock.
+				</p>
+				<a class="text-uppercase primary-btn" href="#">get details</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End home-about Area -->
+<!-- Start model Area -->
+<section class="model-area section-gap" id="car-section">
+	<div class="container">
+		<div class="row d-flex justify-content-center p-5" style="border: 2px solid #fab700;">
+			<div class="col-lg-6 model-left">
+				<div class="title ">
+					<h4 class="mt-20">Honda City</h4>
+					<h2  >RS $149<span>/day</span></h2>
+				</div>
+				<p>
+					Honda City available
+				</p>
+				
+				<p>
+					Capacity         : 04 Person <br>
+					Doors            : 04 <br>
+					Air Condition    : Dual Zone <br>
+					Transmission     : Automatic
+				</p>
+				<a class="text-uppercase primary-btn" href="#">Book This Car Now</a>
+			</div>
+			<div class="col-lg-6 model-right">
+				<img class="img-fluid"  src="{!! asset('images/Home Page/honda-city.jpg') !!}" alt="">
+			</div>
+		</div>
+		<div class="row d-flex justify-content-center mt-4 p-5" style="border: 2px solid #fab700;">
+			<div class="col-lg-6 model-left">
+				<div class="title ">
+					<h4 class="mt-20">Toyota Crolla</h4>
+					<h2  >RS $149<span>/day</span></h2>
+				</div>
+				<p>
+					Toyota Crolla available
+				</p>
+				
+				<p>
+					Capacity         : 04 Person <br>
+					Doors            : 04 <br>
+					Air Condition    : Dual Zone <br>
+					Transmission     : Automatic
+				</p>
+				<a class="text-uppercase primary-btn" href="#">Book This Car Now</a>
+			</div>
+			<div class="col-lg-6 model-right">
+				<img class="img-fluid" src="{!! asset('images/Home Page/corolla-white.jpg') !!}"  alt="">
+			</div>
+		</div>
+		<div class="row d-flex justify-content-center mt-4 p-5" style="border: 2px solid #fab700;">
+			<div class="col-lg-6 model-left">
+				<div class="title ">
+					<h4 class="mt-20">WagonR</h4>
+					<h2  >RS $149<span>/day</span></h2>
+				</div>
+				<p>
+					Honda City available
+				</p>
+				
+				<p>
+					Capacity         : 04 Person <br>
+					Doors            : 04 <br>
+					Air Condition    : Dual Zone <br>
+					Transmission     : Automatic
+				</p>
+				<a class="text-uppercase primary-btn" href="#">Book This Car Now</a>
+			</div>
+			<div class="col-lg-6 model-right">
+				<img class="img-fluid"  src="{!! asset('images/Home Page/WagonR.jpeg') !!}" alt="">
+			</div>
+		</div>
+		<div class="row d-flex justify-content-center mt-4 p-5" style="border: 2px solid #fab700;">
+			<div class="col-lg-6 model-left">
+				<div class="title ">
+					<h4 class="mt-20">Cultus</h4>
+					<h2  >RS $149<span>/day</span></h2>
+				</div>
+				<p>
+					Honda City available
+				</p>
+				
+				<p>
+					Capacity         : 04 Person <br>
+					Doors            : 04 <br>
+					Air Condition    : Dual Zone <br>
+					Transmission     : Automatic
+				</p>
+				<a class="text-uppercase primary-btn" href="#">Book This Car Now</a>
+			</div>
+			<div class="col-lg-6 model-right">
+				<img class="img-fluid"  src="{!! asset('images/Home Page/cultus.jpg') !!}" alt="">
+			</div>
+		</div>
+		
+	</div>
+</section>
+<!-- End model Area -->
+<!-- Start fact Area -->
+<section class="facts-area section-gap">
+<div class="container">
+	<div class="row">
+		<div class="header-text  d-flex justify-content-center align-items-center">
+			<h1 class="text-white">WE PROVIDE YOU THE BEST CAR'S TO MAKE YOUR TRAVEL WORTH ENOUGH</h1>
+		</div>
+	</div>
+</section>
+<!-- end fact Area -->
+<!-- Start callaction Area -->
+<section class="callaction-area relative section-gap">
+	<div class="overlay overlay-bg"></div>
+	<div class="container">
+		<div class="row justify-content-left">
+			<div class="col-lg-10">
+				<h1 class="text-white">FIND THE RENTAL CAR</h1>
+				<p class="mb-0 pb-0">
+					- Search hundered of other travel sites at once
+				</p>
+				<p>
+					- Find the best price for the Rental car you want.
+					
+				</p>
+				<a class="callaction-btn text-uppercase" href="#">Get Connected</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End callaction Area -->
 @endsection

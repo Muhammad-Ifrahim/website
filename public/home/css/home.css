@@ -71,6 +71,12 @@
   margin-top: -77px;
 }
 
+@media (max-height: 575px) {
+  .banner-img img {
+    height: 500px;
+  }
+}
+
 .car-section {
   background-image: url("/images/Home Page/background.jpg");
   background-image: cover;
@@ -128,7 +134,7 @@
 
 @media only screen and (max-width: 575px) {
   .rental-car {
-    padding: 3rem 0 7rem 0;
+    height: 500px;
   }
 }
 

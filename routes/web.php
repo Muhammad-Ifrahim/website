@@ -14,18 +14,15 @@
 Route::get('/', function () {
 	return view('home');
 });
-Route::get('/car-wagonR', function () {
-	return view('car-detail-wagonr');
+Route::get('/contact', function () {
+	return view('contact-us');
 });
-Route::get('/car-wagonR-white', function () {
-	return view('car-detail-wagonr-white');
+Route::get('/about', function () {
+	return view('about');
 });
-Route::get('/car-city', function () {
-	return view('car-detail-honda-city');
+Route::get('/service', function () {
+	return view('service');
 });
-Route::get('/car-cultus', function () {
-	return view('car-detail-cultus');
-});
-Route::get('/car-toyota', function () {
-	return view('car-detail-toyota');
+Route::get('/car', function () {
+	return view('car');
 });

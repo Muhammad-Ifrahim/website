@@ -1,3 +1,7 @@
+.banner-area {
+    background: url(/images/Home Page/header-bg.jpg) center;
+    background-size: cover;
+}
 .header{
 	 background-color: #ff690f;
 	 width: 100%;
@@ -67,7 +71,16 @@
 .banner-img{
 	background-image: cover;
 	 margin-top: -77px;
+
 }
+@media (max-height: 575px){
+  .banner-img{
+	img{
+	   height: 500px;
+	}
+   }	
+}
+
 .car-section{
 	 background-image: url('/images/Home Page/background.jpg');
 	 background-image: cover;
@@ -113,7 +126,8 @@
 	background-position: center;
 	padding: 7rem 0 7rem 0;
 	@media only screen and (max-width: 575px){
-		padding: 3rem 0 7rem 0;
+		// padding: 3rem 0 7rem 0;
+		height: 500px;
 	}
 	
 	background-repeat: no-repeat;

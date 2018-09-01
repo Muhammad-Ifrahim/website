@@ -21,9 +21,10 @@ require('./bootstrap');
 //     el: '#app'
 // });
 $(document).ready(function(){
-	
-	if (window.location.href.indexOf("tab=cars") > -1) {
-       	   
+
+          console.log(" cars");
+  if (window.location.href.indexOf("tab=cars") > -1) {
+           
        $("body ,html").animate({
           scrollTop :$('#car-section').offset().top 
        },1000);   
